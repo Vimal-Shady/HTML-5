@@ -1,4 +1,4 @@
-# LAB EXCERSICE
+# LAB EXCERCISE
 
 1.Design a Webpage using HTML and CSS.
 
