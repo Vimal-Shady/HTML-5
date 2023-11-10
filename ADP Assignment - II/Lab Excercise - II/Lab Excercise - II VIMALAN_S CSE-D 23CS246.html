@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Linux_Shady</title>
+        <style>
+            .header{
+                display: flex;
+                background-color:transparent;
+            }
+            .header > div{
+        
+                margin: 10px;
+                font-size: 30px;
+            }
+            .linux{
+                color:black;
+                padding-left: 80px;
+                text-decoration:dotted;
+            }
+            .image{
+                margin-left: 700px;
+                width: 200px;
+            }
+            .grid{
+                display: grid;
+                grid-template-columns:repeat(5,1fr);
+                color: black;
+                padding: 2px;
+                background-color:transparent;
+            }
+            .content{
+                display: flex;
+                flex-direction: row;
+                color: whitesmoke;
+            }
+            .shortcut{
+                display: flex;
+                margin: 20px;
+                width: 20%;
+                flex-direction: column;
+                overflow:hidden;
+                position: fixed;
+                
+            }
+            .keys{
+                display: flex;
+                margin: 20px;
+                flex-direction: column;
+                width: 80%;
+                overflow-y:hidden;    
+            }
+            .tab:hover{
+                cursor: pointer;
+                color: lavender;
+                transition: 0.15s;
+            }
+            
+            .redirect{
+                background-color: black;
+                border-color: whitesmoke;
+                color: lavender;
+                width: 250px;
+                height: 40px;
+                border: 50px;
+                border-radius: 10px;
+                margin-top: 8px;
+                cursor: pointer;
+            }
+            .redirect:hover{
+                color: black;
+                background-color: grey;
+                transition: 0.20s;
+                border-color: black;
+                border-radius: 50px;
+            }
+            ul{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+                font-weight: lighter;
+            }
+        
+            h1{
+                display: inline-block;
+                font-weight: bolder;
+                color: lavender;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            p{
+                font-weight:lighter;
+                font-size: larger;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin-left: 20px;
+            }
+            span{
+                margin-left: 50px;
+            }
+            .space{
+                margin-left: 100px;
+            }
+            body{
+                background-image: url('https://raw.githubusercontent.com/Vimal-Shady/HTML-Images/main/background1.jpg');
+                background-size: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div>
+                <section id="start"><img src="https://raw.githubusercontent.com/Vimal-Shady/HTML-Images/main/linux.gif"></section>
+            </div>
+            <div class="linux">
+                <h1 style="color: black;">L I N U X</h1>
+                <img src="https://raw.githubusercontent.com/Vimal-Shady/HTML-Images/main/linux.png" class="image">
+                <div class="grid">
+                    <div class="tab" onclick="location.href=''">| Source</div>
+                    <div class="tab" onclick="location.href='https://www.linux.org/pages/download/'">| Distros</div>
+                    <div class="tab" onclick="location.href='https://github.com/Vimal-Shady/'">| GitHub</div>
+                </div>
+            </div>
+            
+        </div>
+        <hr style="border-color: purple;">
+        <div class="content">
+            <div class="shortcut">
+                <button class="redirect" onclick="window.location.href='#start'"><i>START</i></button><br>
+                <button class="redirect" onclick="window.location.href='#about'"><i>ABOUT</i></button><br>
+                <button class="redirect" onclick="window.location.href='#distros'"><i>DISTROS</i></button><br>
+                <button class="redirect" onclick="window.location.href='#kernel'"><i>KERNEL</i></button><br>
+                <button class="redirect" onclick="window.location.href='#advantages'"><i>ADVANTAGES</i></button><br>
+            </div>
+            <pre>                                         </pre>
+            <hr style="border-color: lavender;">
+            <div class="keys">
+                <section id="about">
+                    <h1 onclick="window.location.href=''">&#10070; Linux :</h1>
+                    <p><i><span>Linux</span> is a community of open-source Unix like operating systems that are based on the Linux Kernel. It was initially released by Linus Torvalds on September 17, 1991. It is a free and open-source operating system and the source code can be modified and distributed to anyone commercially or noncommercially under the GNU General Public License. 
+                        Initially, Linux was created for personal computers and gradually it was used in other machines like servers, mainframe computers, supercomputers, etc. Nowadays, Linux is also used in embedded systems like routers, automation controls, televisions, digital video recorders, video game consoles, smartwatches, etc. The biggest success of Linux is Android(operating system) it is based on the Linux kernel that is running on smartphones and tablets. Due to android Linux has the largest installed base of all general-purpose operating systems. Linux is generally packaged in a Linux distribution.</i></p>
+                </section>
+        
+                <section id="distros">
+                    <h1>&#10070; Linux Distribution : </h1>
+                    <p><i><span>Linux</span> distribution is an operating system that is made up of a collection of software based on Linux kernel or you can say distribution contains the Linux kernel and supporting libraries and software. And you can get Linux based operating system by downloading one of the Linux distributions and these distributions are available for different types of devices like embedded devices, personal computers, etc.</i><h3>Around 600 + Linux Distributions are available and some of the popular Linux distributions are: </h3>
+                    <h3><ul><i><li>MX Linux</li>
+                        <li>Manjaro</li>
+                        <li>Linux Mint</li>
+                        <li>Elementary</li>
+                        <li>Ubuntu</li>
+                        <li>Debian</li>
+                        <li>Solus</li>
+                        <li>Fedora</li>
+                        <li>openSUSE</li>
+                        <li>Deepin</li></i>
+                    </ul></h3></p>
+                </section>
+                <section id="kernel">
+                    <h1>&#10070; Kernel :</h1>
+                    <p><i><span>Kernel</span> is the core of the Linux based operating system. It virtualizes the common hardware resources of the computer to provide each process with its virtual resources. This makes the process seem as if it is the sole process running on the machine. The kernel is also responsible for preventing and mitigating conflicts between different processes.</i></p>
+                    <p><h2> &#10146; Different Types Of The kernel Are : </h2>
+                    <i><h3><ul>
+                        <li>Monolithic Kernel</li>
+                        <li>Hybrid kernels</li>
+                        <li>Exo kernels</li>
+                        <li>Micro kernels</li>
+                    </ul></h3></i>
+                    </p>
+                </section>
+                <section id="advantages">
+                    <h1>&#10070; ADVANTAGES :</h1>
+                    <h2><span>&#10146;</span> Open-Source Transparency :</h2>
+                    <p><i><span class="space">One</span> of the fundamental security advantages of Linux is its open-source nature. Unlike proprietary systems, where the source code remains hidden, Linux distributions make their source code accessible to anyone. This transparency allows a global community of developers and security experts to scrutinize the code for vulnerabilities continuously.</i></p>
+                    
+                    <h2><span>&#10146;</span> Light-Weight :</h2>
+                    <p><i><span class="space">Linux</span> is lightweight. The requirements for running Linux are much less than other operating systems. In Linux, the memory footprint and disk space are also lower. Generally, most of the Linux distributions required as little as 128MB of RAM around the same amount for disk space.</i></p>
+                    
+                    <h2><span>&#10146;</span> Privacy :</h2>
+                    <p><i><span class="space">Linux</span> always takes care of user privacy as it never takes much private data from the user. Comparatively, other operating systems ask for the user's private data.</i></p>
+        
+                    <h2><span>&#10146;</span> Rapid Response to Threats :</h2>
+                    <p><i><span class="space">Linux’s</span> security model emphasizes a proactive approach to threat management. The community-driven development process ensures that security updates are released promptly in response to emerging threats. Users can easily install these updates to protect their systems from known vulnerabilities.</i></p>
+                                
+                </section>
+            </div>
+        </div>
+        <p style="font-weight: bolder; color: lavender;">&#169; Copyrights@2023</p>
+    </body>
+</html>
